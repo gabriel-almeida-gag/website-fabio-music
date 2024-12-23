@@ -1,0 +1,148 @@
+:root {
+    --primary: #171c35;
+    --secondary: #161d4b;
+    --accent: #5d5c60;
+    --text: #c7c8ca;
+    --dark: #100a08;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--text);
+    font-family: 'Arial', sans-serif;
+}
+.logo-img{
+    width: 9em;
+}
+
+.navbar {
+    background-color: var(--secondary);
+    padding: 0.01rem;
+}
+
+#navbarNav{
+    font-size: larger;
+}
+.navbar-brand, .nav-link {
+    color: var(--text) !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.hero {
+    background-color: var(--secondary);
+    padding: 8rem 0;
+    position: relative;
+    overflow: hidden;
+   margin-top: 5em;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to bottom right, var(--secondary) 49%, var(--primary) 50%);
+}
+
+.section {
+    padding: 5rem 0;
+    position: relative;
+}
+
+.section-title {
+    color: white;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+#navbarNav ul li{
+    margin-left: 1em;
+}
+.contact {
+    background-color: var(--primary);
+    
+    border: white solid 0.01em;
+    padding: 0.1em;
+    border-radius: 10px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background-color: var(--text);
+}
+
+.performance-card {
+    background-color: var(--secondary);
+    border: none;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.performance-card:hover {
+    transform: translateY(-5px);
+}
+
+.venue-item {
+    background-color: var(--secondary);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.venue-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text);
+}
+
+.btn-custom {
+    background-color: var(--dark);
+    color: var(--text);
+    border: none;
+    padding: 0.8rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: var(--text);
+    color: black;
+}
+
+.social-icons a {
+    color: var(--text);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+footer {
+    background-color: var(--secondary);
+    padding: 2rem 0;
+}
+
+.logo-end{
+    width: 30em;
+}
+
+.qrcode{
+    width: 20em;
+}
