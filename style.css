@@ -148,3 +148,6 @@ footer {
 .qrcode{
     width: 15em;
 }
+.perfil {
+    max-width: 20em;
+}
